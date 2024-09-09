@@ -1,5 +1,6 @@
 %% Generate discrete FRP with integral kernels
-% This script generates the FRP model for a sequence of input symbols
+% This script generates the FRP model geometrically constraied for a 
+% sequence of input symbols
 
 clear variables
 close all
@@ -32,7 +33,8 @@ plot(real(S.C),imag(S.C),'ro',MarkerSize=4,MarkerFaceColor='red');
 xlim([-1.5 1.5])
 ylim([-1.5 1.5])
 grid on
-title_name = strcat('X-pol Rx for FRP model with $M=$',num2str(P.Model.MemLength ));
+title_name = strcat('X-pol Rx for FRP model with $H_i(\hat{M})$ with $i=$' ...
+    ,num2str(P.Model.i),' and $\hat{M}=$',num2str(P.Model.hatM));
 title(title_name,Interpreter='latex')
 xlabel('In-phase',Interpreter='latex')
 ylabel('Quadrature',Interpreter='latex')

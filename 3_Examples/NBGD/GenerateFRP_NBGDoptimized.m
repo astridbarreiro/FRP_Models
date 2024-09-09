@@ -1,5 +1,7 @@
 %% Generate discrete FRP with integral kernels
-% This script generates the FRP model for a sequence of input symbols
+% This script generates the FRP model with NBGD optimized kernels for a 
+% sequence of input symbols
+% Aca lo unico ajustable es la potencia porque M esta fija en 9
 
 clear variables
 close all
@@ -12,7 +14,7 @@ Parameters
 S.C   = unique(S.SymSeq); 
 
 %% Generate Tx sequence and its triplest
-InSequences = GenerateTransmitSequence(S.SymSeq,P.Model.MemLength,P.Sys.Npol);
+InSequences = GenerateTransmitSequence(S.SymSeq,9,P.Sys.Npol);
 TxSeqs      = InSequences.SymSeq.'; 
 
 %% Generate FRP model output 
@@ -32,7 +34,7 @@ plot(real(S.C),imag(S.C),'ro',MarkerSize=4,MarkerFaceColor='red');
 xlim([-1.5 1.5])
 ylim([-1.5 1.5])
 grid on
-title_name = strcat('X-pol Rx for FRP model with $M=$',num2str(P.Model.MemLength ));
+title_name = strcat('X-pol Rx for NBGD optimized FRP model with $M=9$');
 title(title_name,Interpreter='latex')
 xlabel('In-phase',Interpreter='latex')
 ylabel('Quadrature',Interpreter='latex')

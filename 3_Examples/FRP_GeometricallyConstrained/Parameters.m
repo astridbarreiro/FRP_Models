@@ -24,7 +24,7 @@ P.Model.i                   = 0;                    % Number of principal planes
 P.Model.hatM                = 15;                   % Hyperbolic star size    
 P.Model.gamma               = P.Fibre.gamma*1e-3;   % nonlinear coeficient
 P.Model.Rs                  = P.Sys.Rs*1e-9;        % Symbol rate
-P.Model.Nsam                = 2^14;                 % Number of samples 
+P.Model.Nsam                = 2^11;                 % Number of samples 
 P.Model.Gp                  = (1/P.Sys.Npol)*1e-3*10^(P.Sys.Pch/10)/(P.Sys.Rs);
 
 %% Load kernels 

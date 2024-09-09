@@ -17,17 +17,15 @@ P.Sys.L        = 120;
 
 %% Kernels model parameters
 P.Model.MemLength           = 5;                    % Memory test
-P.Model.MemLengthTwoSided   = 2*P.Model.MemLength +1;
-P.Model.MemLengthFileToLoad = P.Model.MemLength;    
 P.Model.gamma               = P.Fibre.gamma*1e-3;   % nonlinear coeficient
 P.Model.Rs                  = P.Sys.Rs*1e-9;        % Symbol rate
-P.Model.Nsam                = 2^14;                 % Number of samples 
+P.Model.Nsam                = 2^13;                 % Number of samples 
 P.Model.Gp                  = (1/2)*1e-3*10^(P.Sys.Pch/10)/(P.Sys.Rs);
 
 %% Load kernels 
-FileName = strcat('Integral_Kernels_'...
-    ,num2str(P.Sys.Nch),'CH_',num2str(P.Sys.Nspans),'S_',...
-    num2str(P.Sys.L),'km_',num2str(P.Model.Rs ),'GBd_N',...
-    num2str(P.Model.MemLength),'.mat');
+FileName = strcat('5Batch_NBGD_NFOff_'...
+    ,num2str(P.Sys.Nch),'CH-',num2str(P.Sys.Nspans),'S_', ...
+    num2str(P.Sys.M),'_',num2str(P.Sys.L),'km_',num2str(P.Model.Rs ),'GBd_',...
+    num2str(P.Sys.Pch),'dBm_Kernels_N9.mat');
 ModelKernels = load(FileName);
-SPM_Kernels  = Cub2Vec(ModelKernels.SPM_Kernels,P.Model.MemLength);
+SPM_Kernels  = ModelKernels.SPM_Kernels;
