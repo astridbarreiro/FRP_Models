@@ -15,9 +15,9 @@ The repository contains the following folders:
 - **2_Kernels:** containing the FRP kernels of the scenarios enlisted above
 - **3_Examples:** containing the scripts to generate the FRP scenarios 
 The FRP model is generated using the following expression 
-$$
-r_0 = a_0 + \frac{8}{9}\jmath \gamma G_p \sum_{k=-\infty}^\infty\sum_{l=-\infty}^\infty\sum_{m=-\infty}^\infty \boldsymbol{a}^\dagger_k\boldsymbol{a}_l \boldsymbol{a}_m S_{klm}
-$$
+
+![FRP_equation](https://github.com/user-attachments/assets/ef7f5c0f-0919-4145-a951-ecb8a78f5190)
+
 where  
 ### Numerically computed (integral kernels)
 
