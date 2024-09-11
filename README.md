@@ -32,7 +32,7 @@ In [2], we propose a methodology to constrain the set of kernels based on their 
 In [3], we introduced a data-driven approach to determining the FRP kernels. An NBGD optimizer can optimize the kernels using simulated or experimental data. This approach is relatively simple and allows you to reduce the size of the kernels set while increasing the model's accuracy. Similar to the case of the numerically computed kernel, the set of kernels is defined by the memory size. Which, in this case, specifies the size of the set fed to the NBGD optimizer. There is only one available memory size for this case, $M=9$, which was found in [3] to be the best trade-off between complexity and accuracy. The numerically computed kernels are power-independent, meaning you can use the abovementioned cases for any power you wish. This, nevertheless, is not the case for the  NBGD-optimized kernels since the data feeding the optimizer is for a fixed power. These are powers available for you to test $P=[0,20]$.
 
 ## Transmission parameters
-As explained in [2] and [3], we consider a single-channel, single-span fiber-optic transmission system using a polarisation-multiplexed signal. Check Fig. 1 in either of these two papers. To numerically compute the kernels and generate the simulated date to optimize them, the following transmission parameters were considered: 
+As explained in [2] and [3], we consider a single-channel, single-span fiber-optic transmission system using a polarisation-multiplexed signal. Check Fig. 1 in either of these two papers. To numerically compute the kernels and generate the simulated data to optimize them, the following transmission parameters were considered: 
 
 |Parameter|Value|
 |---------|-----|
