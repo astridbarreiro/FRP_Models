@@ -1,7 +1,6 @@
-%% Generate discrete FRP with integral kernels
+%% Generate discrete FRP with NBGD kernels
 % This script generates the FRP model with NBGD optimized kernels for a 
 % sequence of input symbols
-% Aca lo unico ajustable es la potencia porque M esta fija en 9
 
 clear variables
 close all
