@@ -1,8 +1,9 @@
 %% Parameters Script to generate gometrically FRP constrained 
 % Used by GenerateFRP_Geometrically_Constrained.m 
-% Available principal planes i = 3,6,9,12,15,18,21,24,27,30,45,60,70,90,
+% Available principal planes i = 0,1,2,3,4,5
+% Available sizes for the hyperbolic star hatM =  3,6,9,12,15,18,21,24,27,30,45,60,70,90,
 %                                105,120,135,150,165,180,195,210,225
-% Available sizes for the hyperbolic star hatM = 0,1,2,3,4,5
+
 % Default example is i=0 and hatM=15 (phase matching condition)
 
 %% Fiber                                      % Physical properties of the fiber
