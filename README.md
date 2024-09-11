@@ -14,6 +14,8 @@ The repository contains the following folders:
 - **1_HelperFunctions:** containing basic functions
 - **2_Kernels:** containing the FRP kernels of the scenarios enlisted above
 - **3_Examples:** containing the scripts to generate the FRP scenarios 
+
+
 The FRP model is generated using the following input/output expression
 
 ![FRP_equation](https://github.com/user-attachments/assets/ef7f5c0f-0919-4145-a951-ecb8a78f5190)
