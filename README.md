@@ -11,7 +11,7 @@ Using this repository, you can generate the first-order regular perturbation on 
 
 ## Summary 
 The repository contains the following folders:
-- **1_HelperFunctions:** containing with basic functions
+- **1_HelperFunctions:** containing with functions used
 - **2_Kernels:** containing the FRP kernels of the scenarios enlisted above
 - **3_Examples:** containing the scripts to generate the FRP scenarios 
 The FRP model is generated using the following input/output expression
