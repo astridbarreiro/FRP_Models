@@ -43,7 +43,10 @@ As explained in [2] and [3], we consider a single-channel, single-span fiber-opt
 |RRC roll-off factor |0.01|
 
 ## Parameters script 
-Each example in the repository includes a parameter script that you can use to evaluate the available cases. Beware that only the cases summarized above are accessible for simulation. 
+Each example in the repository includes a parameter script that you can use to evaluate the available cases. Beware that only the cases summarized above are accessible for simulation.
+
+**Disclaimer:** The parameter _P.Model.Nsam_ must be chosen carefully, or your compilation will crash because you run out of memory. Beware that the expression of the FRP model requires the computation of many triplets, which must be done for every symbol in your transmitted sequence. In its implementation, we generated all the triplets simultaneously!! Which generates an array of triplets of size $N_{\text{sam}}\times(2M+1)^3$, with $N_{\text{sam}}$ being the number of symbols in the transmitted sequence. 
+
 
 # References 
 - [1] R. Dar, M. Feder, A. Mecozzi and M. Shtaif, "Inter-Channel Nonlinear Interference Noise in WDM Systems: Modeling and Mitigation," in Journal of Lightwave Technology, vol. 33, no. 5, pp. 1044-1053, 1 March 1, 2015, doi: 10.1109/JLT.2014.2384998. [[https://ieeexplore.ieee.org/document/6994804]]
