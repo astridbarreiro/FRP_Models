@@ -1,4 +1,4 @@
-# PhD_miscellaneous_repo
+# FRP_Models Open Repository 
 Using this repository, you can generate the first-order regular perturbation on gamma (FRP) approximate solution to the Manakov equation considering the following *scenarios*:
 1. Numerically computed or integral kernels
 2. Geometrically constrained integral kernels
